@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img
@@ -11,13 +11,9 @@
                 />
                 Simple CRUD
             </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 pointer">
-                    <li class="nav-item">
-                        <router-link class="nav-link" :to="{name: 'products'}">Products</router-link>
-                    </li>
-                </ul>
-            </div>
+            <span class="navbar-text me-auto">
+                <router-link class="nav-link" :to="{name: 'products'}">Products</router-link>
+            </span>
         </div>
     </nav>
 </template>
